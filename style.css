@@ -185,3 +185,39 @@ background:#ffb703;
 color:#000;
 transform:scale(1.05);
 }
+footer{
+background:#000;
+padding:50px 20px;
+text-align:center;
+margin-top:50px;
+}
+
+.footer-content h2{
+color:#ffb703;
+margin-bottom:10px;
+}
+
+.footer-content p{
+margin:8px 0;
+color:#ddd;
+}
+
+.footer-links{
+margin:20px 0;
+}
+
+.footer-links a{
+color:#fff;
+text-decoration:none;
+margin:0 15px;
+}
+
+.footer-links a:hover{
+color:#ffb703;
+}
+
+.copyright{
+margin-top:20px;
+font-size:14px;
+color:#888;
+}
