@@ -221,3 +221,52 @@ margin-top:20px;
 font-size:14px;
 color:#888;
 }
+/* Floating WhatsApp */
+
+.whatsapp-float{
+position:fixed;
+bottom:25px;
+right:25px;
+width:60px;
+height:60px;
+background:#25D366;
+color:#fff;
+font-size:30px;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:50%;
+text-decoration:none;
+box-shadow:0 4px 15px rgba(0,0,0,.3);
+z-index:999;
+transition:.3s;
+}
+
+.whatsapp-float:hover{
+transform:scale(1.1);
+}
+
+/* Floating Call */
+
+.call-float{
+position:fixed;
+bottom:100px;
+right:25px;
+width:60px;
+height:60px;
+background:#d62828;
+color:#fff;
+font-size:30px;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:50%;
+text-decoration:none;
+box-shadow:0 4px 15px rgba(0,0,0,.3);
+z-index:999;
+transition:.3s;
+}
+
+.call-float:hover{
+transform:scale(1.1);
+}
