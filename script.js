@@ -31,3 +31,81 @@ if (hour >= 5 && hour < 21) {
 }
 
 document.body.appendChild(status);
+// ===========================
+// Madras Premium Coffee
+// script.js
+// ===========================
+
+// Smooth scrolling for navigation links
+document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('click', function (e) {
+        const targetId = this.getAttribute('href');
+
+        if (targetId.startsWith('#')) {
+            e.preventDefault();
+
+            document.querySelector(targetId).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+
+// Scroll To Top Button
+const topBtn = document.getElementById("topBtn");
+
+window.addEventListener("scroll", () => {
+
+    if (window.scrollY > 300) {
+        topBtn.style.display = "flex";
+    } else {
+        topBtn.style.display = "none";
+    }
+
+});
+
+topBtn.addEventListener("click", () => {
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+
+});
+
+// Header Shadow on Scroll
+const header = document.querySelector("header");
+
+window.addEventListener("scroll", () => {
+
+    if (window.scrollY > 20) {
+        header.style.boxShadow = "0 8px 20px rgba(0,0,0,.2)";
+    } else {
+        header.style.boxShadow = "0 5px 15px rgba(0,0,0,.15)";
+    }
+
+});
+
+// Fade-in Animation
+const sections = document.querySelectorAll("section");
+
+const observer = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+        }
+
+    });
+
+}, {
+    threshold: 0.15
+});
+
+sections.forEach(section => {
+    section.classList.add("hidden");
+    observer.observe(section);
+});
+
+console.log("Madras Premium Coffee Website Loaded Successfully!");
