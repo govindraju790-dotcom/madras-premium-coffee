@@ -80,23 +80,4 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', revealOnScroll);
     revealOnScroll();
 });
-// Premium Random Visitor Counter Simulator for Elite Look
-document.addEventListener('DOMContentLoaded', () => {
-    const counterElement = document.getElementById('digitalCounter');
-    if (counterElement) {
-        // Base starting point
-        let currentCount = 1542; 
-        
-        // Check if there is already a saved count in the user's browser
-        if (localStorage.getItem('coffee_visitors')) {
-            currentCount = parseInt(localStorage.getItem('coffee_visitors')) + 1;
-        } else {
-            // Add a small randomized realistic variance
-            currentCount = Math.floor(Math.random() * 200) + 1400;
-        }
-        
-        localStorage.setItem('coffee_visitors', currentCount);
-        counterElement.textContent = Number(currentCount).toLocaleString('en-IN');
-    }
-});
 
