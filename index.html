@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Experience authentic, premium coffee at Madras Premium Coffee. Serving exceptional filter coffee, brewing happiness since 2016 in Kakinada.">
+    <title>Madras Premium Coffee | Premium Coffee Brand</title>
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-gold">Madras</span> Premium Coffee
+            </a>
+            <nav class="nav-menu" id="navMenu">
+                <a href="#hero" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#menu" class="nav-link">Menu</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#branches" class="nav-link">Branches</a>
+                <a href="#franchise" class="nav-link-btn">Franchise</a>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- 1. Premium Hero Banner -->
+    <section id="hero" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="status-badge closed" id="liveStatus">
+                <span class="status-dot"></span> <span id="statusText">Checking Status...</span>
+            </div>
+            <h1 class="hero-title animate-up">Brewing Perfection <br><span class="text-gold">Since 2016</span></h1>
+            <p class="hero-subtitle animate-up delay-1">Indulge in the rich heritage of authentic South Indian filter coffee and premium blends crafted with precision.</p>
+            <div class="hero-buttons animate-up delay-2">
+                <a href="#menu" class="btn btn-primary">Explore Menu</a>
+                <a href="#branches" class="btn btn-secondary">Find a Branch</a>
+            </div>
+        </div>
+        <!-- Coffee Steam Animation Element -->
+        <div class="steam-container">
+            <div class="steam-line"></div>
+            <div class="steam-line"></div>
+            <div class="steam-line"></div>
+        </div>
+    </section>
+
+    <!-- 2. About Us -->
+    <section id="about" class="about-section section-padding">
+        <div class="container grid-2">
+            <div class="about-img-container reveal">
+                <!-- Fallback premium coffee image placeholder -->
+                <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=600&auto=format&fit=crop" alt="Premium Coffee Brewing" class="about-img">
+                <div class="experience-badge glassmorphism">
+                    <h3>10+</h3>
+                    <p>Years of Excellence</p>
+                </div>
+            </div>
+            <div class="about-text reveal">
+                <span class="section-subtitle">Our Legacy</span>
+                <h2 class="section-title">A Decade of Rich Craftsmanship</h2>
+                <p>For over 10 years, Madras Premium Coffee has stood as a beacon of quality and authentic flavors. What started as a passion for perfecting the iconic South Indian filter coffee has evolved into a premium lifestyle brand trusted by thousands of coffee connoisseurs daily.</p>
+                <p>We source only the finest, sustainably harvested coffee beans, roasting them to perfection to guarantee an unmatched aromatic profile in every cup.</p>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <h4>2+</h4>
+                        <p>Prime Branches</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>500k+</h4>
+                        <p>Happy Cups Served</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Why Choose Us -->
+    <section class="features-section section-padding">
+        <div class="container">
+            <div class="text-center reveal">
+                <span class="section-subtitle">The Premium Standard</span>
+                <h2 class="section-title">Why Coffee Lovers Choose Us</h2>
+            </div>
+            <div class="grid-3 margin-top-md">
+                <div class="feature-card glassmorphism reveal">
+                    <div class="feature-icon"><i class="fas fa-seedling"></i></div>
+                    <h3>Artisanal Beans</h3>
+                    <p>Strictly selected premium coffee beans chosen for their body, aroma, and distinct flavor notes.</p>
+                </div>
+                <div class="feature-card glassmorphism reveal">
+                    <div class="feature-icon"><i class="fas fa-fire"></i></div>
+                    <h3>Master Roasting</h3>
+                    <p>Roasted to precise parameters under master supervision to reveal optimal traditional rich depth.</p>
+                </div>
+                <div class="feature-card glassmorphism reveal">
+                    <div class="feature-icon"><i class="fas fa-clock"></i></div>
+                    <h3>Morning Fresh</h3>
+                    <p>Opening early at 5:30 AM daily to energize your mornings with fresh, rich, steaming brews.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Our Menu -->
+    <section id="menu" class="menu-section section-padding">
+        <div class="container">
+            <div class="text-center reveal">
+                <span class="section-subtitle">Curated Collection</span>
+                <h2 class="section-title">Our Premium Menu</h2>
+            </div>
+            
+            <div class="menu-tabs reveal">
+                <button class="tab-btn active" data-filter="all">All Items</button>
+                <button class="tab-btn" data-filter="beverages">Brews & Beverages</button>
+                <button class="tab-btn" data-filter="snacks">Snacks & More</button>
+            </div>
+
+            <div class="menu-grid margin-top-md" id="menuGrid">
+                <!-- Beverages -->
+                <div class="menu-item glassmorphism reveal" data-category="beverages">
+                    <div class="menu-item-info">
+                        <h3>Filter Coffee <span class="badge-signature">Signature</span></h3>
+                        <p>Authentic, aromatic chicory-blended master traditional filter extraction.</p>
+                    </div>
+                </div>
+                <div class="menu-item glassmorphism reveal" data-category="beverages">
+                    <div class="menu-item-info">
+                        <h3>Strong Coffee</h3>
+                        <p>An extra-bold dose of pure decoction mixed with perfectly velvety texturized milk.</p>
+                    </div>
+                </div>
+                <div class="menu-item glassmorphism reveal" data-category="beverages">
+                    <div class="menu-item-info">
+                        <h3>Tea</h3>
+                        <p>Classic premium Assam loose leaf tea steeped to a deep golden standard.</p>
+                    </div>
+                </div>
+                <div class="menu-item glassmorphism reveal" data-category="beverages">
+                    <div class="menu-item-info">
+                        <h3>Masala Tea</h3>
+                        <p>Infused with fresh ginger, crushed cardamom, cloves, and premium spices.</p>
+                    </div>
+                </div>
+                <div class="menu-item glassmorphism reveal" data-category="beverages">
+                    <div class="menu-item-info">
+                        <h3>Badam Milk</h3>
+                        <p>Rich, creamy milk reduced with real almond paste, saffron threads, and nuts.</p>
+                    </div>
+                </div>
+                <div class="menu-item glassmorphism reveal" data-category="beverages">
+                    <div class="menu-item-info">
+                        <h3>Cold Coffee</h3>
+                        <p>Perfectly chilled espresso shot whipped smoothly with creamy milk and vanilla elements.</p>
+                    </div>
+                </div>
+                <div class="menu-item glassmorphism reveal" data-category="beverages">
+                    <div class="menu-item-info">
+                        <h3>Cool Drinks</h3>
+                        <p>Assorted premium carbonated refreshments served perfectly iced and crisp.</p>
+                    </div>
+                </div>
+                <div class="menu-item glassmorphism reveal" data-category="beverages">
+                    <div class="menu-item-info">
+                        <h3>Water Bottle</h3>
+                        <p>Pure, safe, high-grade mineral refreshing drinking water.</p>
+                    </div>
+                </div>
+                <!-- Snacks -->
+                <div class="menu-item glassmorphism reveal" data-category="snacks">
+                    <div class="menu-item-info">
+                        <h3>Snacks</h3>
+                        <p>A rotating selection of crispy, freshly-baked regional savory accompaniments.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Gallery -->
+    <section id="gallery" class="gallery-section section-padding">
+        <div class="container">
+            <div class="text-center reveal">
+                <span class="section-subtitle">Visual Experience</span>
+                <h2 class="section-title">Inside Madras Premium Coffee</h2>
+            </div>
+            
+            <!-- Image Slider Container -->
+            <div class="slider-container margin-top-md reveal">
+                <div class="slider-wrapper" id="sliderWrapper">
+                    <div class="slide">
+                        <img src="https://images.unsplash.com/photo-1507133750040-4a8f57021571?q=80&w=800&auto=format&fit=crop" alt="Premium Espresso">
+                    </div>
+                    <div class="slide">
+                        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=800&auto=format&fit=crop" alt="Coffee Pouring">
+                    </div>
+                    <div class="slide">
+                        <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?q=80&w=800&auto=format&fit=crop" alt="Coffee Shop Ambiance">
+                    </div>
+                </div>
+                <button class="slider-btn prev-btn" id="prevBtn" aria-label="Previous Slide"><i class="fas fa-chevron-left"></i></button>
+                <button class="slider-btn next-btn" id="nextBtn" aria-label="Next Slide"><i class="fas fa-chevron-right"></i></button>
+                <div class="slider-dots" id="sliderDots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Branches -->
+    <section id="branches" class="branches-section section-padding">
+        <div class="container">
+            <div class="text-center reveal">
+                <span class="section-subtitle">Visit Our Hubs</span>
+                <h2 class="section-title">Our Premium Outlets</h2>
+            </div>
+            <div class="grid-2 margin-top-md">
+                <!-- Branch 1 -->
+                <div class="branch-card glassmorphism reveal">
+                    <div class="branch-info">
+                        <span class="branch-tag">Main Hub</span>
+                        <h3>Eat Street, Kakinada</h3>
+                        <p><i class="fas fa-clock text-gold"></i> Daily: 5:30 AM – 9:30 PM</p>
+                        <p><i class="fas fa-map-marker-alt text-gold"></i> Eat Street Zone, Kakinada, Andhra Pradesh</p>
+                        <a href="https://goo.gl/maps/qLy1VuSJHe8i4DMn7?g_st=ac" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Get Directions <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                    <div class="map-wrapper">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3815.8286082464735!2d82.2389148!3d16.9829391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a382875b34dfeb7%3A0xbd7fc65507ffc9a8!2sEat%20Street%20Kakinada!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <!-- Branch 2 -->
+                <div class="branch-card glassmorphism reveal">
+                    <div class="branch-info">
+                        <span class="branch-tag">Campus Hub</span>
+                        <h3>JNTU Back Side, Kakinada</h3>
+                        <p><i class="fas fa-clock text-gold"></i> Daily: 5:30 AM – 9:30 PM</p>
+                        <p><i class="fas fa-map-marker-alt text-gold"></i> JNTU University Outer Ring Road Back Side, Kakinada</p>
+                        <a href="https://maps.app.goo.gl/UF961xAvTYaS7sTY6?g_st=ac" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Get Directions <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                    <div class="map-wrapper">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3815.356247738245!2d82.2404!3d17.0062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a382847ffffffaf%3A0x33b1e39a349b1ff3!2sJNTUK%20Kakinada!5e0!3m2!1sen!2sin!4v1710000000001!5m2!1sen!2sin" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Google Reviews -->
+    <section class="reviews-section section-padding">
+        <div class="container">
+            <div class="text-center reveal">
+                <span class="section-subtitle">Guest Testimonials</span>
+                <h2 class="section-title">What Our Patrons Say</h2>
+            </div>
+            <div class="grid-3 margin-top-md">
+                <div class="review-card glassmorphism reveal">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"The finest authentic filter coffee you can find in Kakinada. The morning aroma here is elite, absolute Starbucks level design and taste!"</p>
+                    <h4 class="review-author">- Rajesh Kumar</h4>
+                </div>
+                <div class="review-card glassmorphism reveal">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"My daily morning stop. The Masala Tea is masterfully spiced and the open space vibe near Eat Street is unmatched."</p>
+                    <h4 class="review-author">- Divya Sri</h4>
+                </div>
+                <div class="review-card glassmorphism reveal">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Extraordinary premium coffee standards. Strong coffee actually stands strong! Excellent hygiene and fast customer service."</p>
+                    <h4 class="review-author">- Satish Verma</h4>
+                </div>
+            </div>
+            <div class="text-center margin-top-sm reveal">
+                <a href="https://goo.gl/maps/qLy1VuSJHe8i4DMn7?g_st=ac" target="_blank" rel="noopener" class="btn btn-secondary">Write a Google Review</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8 & 9. Contact & Franchise Section -->
+    <section id="franchise" class="contact-franchise-section section-padding">
+        <div class="container grid-2">
+            <!-- Contact Info Panel -->
+            <div class="contact-panel glassmorphism reveal">
+                <span class="section-subtitle">Reach Out</span>
+                <h2 class="section-title">Connect With Us</h2>
+                <p class="panel-desc">Have queries, recommendations, or special group celebration booking requests? Get in touch directly.</p>
+                
+                <div class="info-list">
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h4>Customer Care Line</h4>
+                            <p><a href="tel:+919505814700">+91 9505814700</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Operating Timeline</h4>
+                            <p>Daily: 5:30 AM – 9:30 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Franchise Recruitment Panel -->
+            <div class="franchise-panel glassmorphism reveal">
+                <span class="section-subtitle">Business Growth</span>
+                <h2 class="section-title">Franchise Opportunities</h2>
+                <p class="panel-desc">Partner with a proven premium brand with a stellar decade-long legacy. Own a high-yield Madras Premium Coffee outlet.</p>
+                
+                <div class="info-list">
+                    <div class="info-item">
+                        <i class="fas fa-briefcase"></i>
+                        <div>
+                            <h4>Franchise Enquiry Desk</h4>
+                            <p><a href="tel:+917989933510">+91 79899 33510</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="action-holder margin-top-sm">
+                    <a href="https://wa.me/917989933510?text=I%20am%20interested%20in%20Madras%20Premium%20Coffee%20Franchise%20Opportunity" target="_blank" rel="noopener" class="btn btn-primary w-full text-center">Apply For Franchise Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. Footer -->
+    <footer class="main-footer">
+        <div class="container grid-4">
+            <div class="footer-col">
+                <h3>Madras Premium Coffee</h3>
+                <p class="footer-about-text">Perfecting premium traditional roasts and modern coffee culture experiences since 2016.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Access</h4>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#menu">Our Menu</a></li>
+                    <li><a href="#branches">Branches</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Outlets</h4>
+                <ul>
+                    <li>Eat Street, Kakinada</li>
+                    <li>JNTU Back Side, Kakinada</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Hotlines</h4>
+                <p class="footer-tel">Care: <a href="tel:+919505814700">+91 9505814700</a></p>
+                <p class="footer-tel">Franchise: <a href="tel:+917989933510">+91 79899 33510</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 Madras Premium Coffee. All Rights Reserved. Crafted for Elite Coffee Lovers.</p>
+        </div>
+    </footer>
+
+    <!-- Floating Strategic Action Triggers -->
+    <div class="floating-actions">
+        <a href="https://wa.me/919505814700?text=Hi%20Madras%20Premium%20Coffee%2C%20I'd%20like%20to%20connect!" class="float-btn whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="tel:+919505814700" class="float-btn call-float" aria-label="Call Store Executive">
+            <i class="fas fa-phone-alt"></i>
+        </a>
+    </div>
+
+    <!-- Script File Hook -->
+    <script src="script.js"></script>
+</body>
+</html>
